@@ -47,6 +47,10 @@ TEST_CASE("func4 throw error (There is no real root of the number)"){
     CHECK_THROWS_AS(func4(4.99), std::runtime_error);
 }
 
+TEST_CASE("func4 check value"){
+    CHECK(func4(0) == 1 / sqrt(5));
+}
+
 TEST_CASE("check left_rect throw (Division by Zero)"){
     CHECK_THROWS_AS(left_rect(1, 2, 0, func1), std::runtime_error);
 }
