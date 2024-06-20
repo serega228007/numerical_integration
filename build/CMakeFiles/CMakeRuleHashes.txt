@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+5355f6f38e23bb7ad18e82e3296be08a sciplot/docs/CMakeFiles/docs
+3af483f29bec1daac3c0df64eaa51cf1 sciplot/docs/CMakeFiles/docs-api
+950baf8d2b553e7615c90db697e473a0 sciplot/examples/CMakeFiles/examples
