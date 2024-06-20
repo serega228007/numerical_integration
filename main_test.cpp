@@ -28,23 +28,23 @@ TEST_CASE("func3 check value"){
 }
 
 TEST_CASE("func4 throw error (Division by Zero)"){
-    REQUIRE_THROWS_AS(func4(1.0), std::runtime_error);
+    CHECK_THROWS_AS(func4(1.0), std::runtime_error);
 }
 
 TEST_CASE("func4 throw error (Division by Zero)"){
-    REQUIRE_THROWS_AS(func4(5.0), std::runtime_error);
+    CHECK_THROWS_AS(func4(5.0), std::runtime_error);
 }
 
 TEST_CASE("func4 throw error (There is no real root of the number)"){
-    WARN_THROWS_AS(func4(2.0), std::runtime_error);
+    CHECK_THROWS_AS(func4(2.0), std::runtime_error);
 }
 
 TEST_CASE("func4 throw error (There is no real root of the number)"){
-    WARN_THROWS_AS(func4(3.9), std::runtime_error);
+    CHECK_THROWS_AS(func4(3.9), std::runtime_error);
 }
 
 TEST_CASE("func4 throw error (There is no real root of the number)"){
-    WARN_THROWS_AS(func4(4.99), std::runtime_error);
+    CHECK_THROWS_AS(func4(4.99), std::runtime_error);
 }
 
 TEST_CASE("check left_rect throw (Division by Zero)"){
